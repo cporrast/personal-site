@@ -20,13 +20,16 @@ plugins:
 
 # jekyll-seo-tag configuration
 author: ""
-url: ""
+url: "https://cristianporras.com"
 title: ""
 description: ""
 twitter:
   username: ""
   card: ""
 logo: "path/to/image"
+
+permalink: /:title:/
+
 
 
 # Exclude from processing.
