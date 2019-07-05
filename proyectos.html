@@ -2,10 +2,10 @@
 layout: default
 permalink: "/proyectos/"
 ---
-<div class="container mx-8">
-  <div class="flex flex-wrap">
+<div class="container">
+  <div class="flex flex-wrap mx-auto">
     {% for proyecto in site.data.proyectos %}
-      <div style="background-color: {{proyecto.color}}"class="w-2/5 my-4 rounded overflow-hidden shadow-lg hover:shadow-md mx-4">
+      <div style="background-color: {{proyecto.color}}"class="sm:w-full md:w-2/5 my-4 rounded overflow-hidden shadow-lg hover:shadow-md mx-4">
         <a href="{{ proyecto.url }}" target="_blank" rel="noopener noreferrer">
           <div class="px-6 py-4">
             <div class="font-bold text-white text-xl mb-2 text-center">{{ proyecto.nombre }}</div>
