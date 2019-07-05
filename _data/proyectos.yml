@@ -1,0 +1,17 @@
+- nombre: RestoHub
+  logo: restohub-logo.png
+  url: https://restohub.co
+  descripcion: Software para Restaurantes que buscan crecer sus negocios por internet
+  color: "#3a60bc"
+
+- nombre: Tourism Ranking
+  logo: tourismranking-logo.png
+  url: https://toursimranking.com
+  descripcion: Servicios de Mercadeo y Diseño Web para Agencias de Turismo
+  color: "#32605c"
+
+- nombre: WP Basico
+  logo: wpbasico-logo.png
+  url: https://wpbasico.com
+  descripcion: Servicios de Diseño, Desarrollo y Mantenimiento de WordPress
+  color: "#2d759a"

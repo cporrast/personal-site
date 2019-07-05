@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: "/proyectos/"
+---
+<div class="container mx-8">
+  <div class="flex flex-wrap">
+    {% for proyecto in site.data.proyectos %}
+      <div style="background-color: {{proyecto.color}}"class="w-2/5 my-4 rounded overflow-hidden shadow-lg hover:shadow-md mx-4">
+        <a href="{{ proyecto.url }}" target="_blank" rel="noopener noreferrer">
+          <div class="px-6 py-4">
+            <div class="font-bold text-white text-xl mb-2 text-center">{{ proyecto.nombre }}</div>
+            <img class="mx-auto my-4" src="/img/{{proyecto.logo}}" alt="{{proyecto.nombre}} Logo" width="225" height="45">
+            <p class="text-white text-base text-center w-2/3 mx-auto">
+              {{ proyecto.descripcion }}
+            </p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
