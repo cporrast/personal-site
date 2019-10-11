@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: "/libros/"
+---
+<div class="container">
+  <div class="flex flex-wrap mx-auto">
+    {% for libro in site.data.libros %}
+      <div class="w-full md:w-4/5 my-4 rounded overflow-hidden shadow hover:shadow-md mx-auto">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">{{ libro.nombre }}</div>
+        </div>
+        <a href="{{ libro.url }}" target="_blank" rel="noopener noreferrer nofollow">Ver en Amazon</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

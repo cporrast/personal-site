@@ -3,24 +3,12 @@ layout: default
 permalink: "/blog/"
 ---
 <div class="container mx-8">
-  <h1>Blog</h1>
-
-  <!-- <div class="categories">
-      <div class="">Categorias:</div>
-      {% for category in site.categories %}
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <div class="archive-group">
-        <a href="#{{ category_name }}">{{ category_name }}</a>
-      </div>
-    {% endfor %}
-  </div> -->
-
+<!-- 
   <div id="archives">
     {% for category in site.categories %}
       <div class="archive-group">
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <div id="#{{ category_name | slugize }}"></div>
-        <p></p>
     
         <h3 class="category-head">{{ category_name }}</h3>
         <a name="{{ category_name | slugize }}"></a>
@@ -41,6 +29,21 @@ permalink: "/blog/"
         {% endfor %}
       </div>
     {% endfor %}
-  </div>
+  </div> -->
+
+
+{% for post in site.categories[category_name] %}
+  <article class="archive-item">
+    <div class="px-6 py-4 mx-auto">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h3 class="font-bold text-black text-xl mb-2 text-center">{{post.title}}</h3>
+        <p class="text-white text-base text-center">
+          {{ post.descripcion }}
+        </p>
+      </a>
+    </div>
+  </article>
+{% endfor %}
+  
 </div>
 
