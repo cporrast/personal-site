@@ -1,0 +1,22 @@
+---
+---
+/* tailindcss/base */
+/* tailindcss/components */
+/* tailwindcss/utilities */
+/* 
+@import "tailwindcss/base";
+html{
+  scroll-behavior: smooth;
+}
+
+@import "tailwindcss/components";
+
+/* Write your styles below this line. */
+
+/* Write your styles above this line. */
+
+/* @tailwind utilities;  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
