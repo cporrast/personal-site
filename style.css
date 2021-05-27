@@ -20,3 +20,22 @@ html{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply mb-4 text-4xl font-semibold;
+}
+h2 {
+
+}
+h3 {
+
+}
+.container {
+  @apply px-6 mx-auto max-w-7xl md:px-4;
+}
+
+.blog-post p{
+  font-size: 18px;
+    margin-bottom: 23px;
+    line-height: 1.9;
+}
